@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+}
+
+
+.clear{
+    clear: both;
+}
+
+@font-face{
+    font-family: 'josefin';
+    src: url(../fonts/JosefinSlab-Regular.ttf);
+}
+
+/*ESTILIZAÇÃO DO SITE*/
+
+header{
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    max-height: 800px;
+    padding: 30px 2%;
+    min-height: 800px;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header nav.desktop {
+    float: right;
+}
+
+header nav.mobile{
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/menu.png');
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+header nav.mobile ul{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    left: 0;
+    top: 120px;
+    background-color: white;
+    text-align: center;
+    
+}
+
+nav.mobile ul li:hover{
+    background-color: rgb(42, 155, 207);
+}
+nav.mobile:hover ul{
+    opacity: 1;
+    display: block;
+}
+
+header nav.mobile ul li {
+    border-bottom: 1px solid black;
+    padding: 8px 0; 
+    transition: 0.5s;
+}
+
+header nav.mobile ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+header nav.desktop li {
+    float: left;
+    padding: 30px 30px;
+    
+}
+
+header li > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'josefin';
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+header .desktop li:hover{
+    text-shadow: black 2px 2px;
+    transform: scale(1.3);
+    transition: 2s;
+    
+}
+
+
+header .logo img{
+    float: left;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    bottom: 20px;
+}
+
+.chamada1{
+    float: right;
+    margin: 250px 150px;
+}
+
+.chamada1 h2 {
+    font-family: 'josefin';
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+    position: relative;
+    text-shadow: black 2px 2px;
+}
+
+.chamada1 p {
+    font-family: 'josefin';
+    font-style: italic;
+    font-size: 36px;
+    color: white;
+    text-shadow: black 2px 2px;
+}
+/*fim  header*/
+
+
+section.section1{
+    width: 100%;
+    padding: 0 2%;
+    background: linear-gradient(to right bottom,rgb(92, 91, 91),black);
+    height: 450px;
+}
+
+section.section1 .container{
+    max-width: 1200px;
+    height: calc(100% +30px);
+}
+
+.section1-text {
+    font-family: 'josefin';
+    color: white;
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+    padding-right: 20px ;
+    position: relative;
+    left: 25px;
+}
+
+.section1-text h2{
+    font-family: 'josefin';
+    color: white;
+    font-weight: normal;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+.section1-text p {
+    margin-top: 30px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.section1-text ul {
+    list-style-position: outside;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.section1-text ul li{
+   float: left;
+   margin-top: 7px;
+   width: 100%;
+   font-size: 24px;
+   padding-bottom: 5px;
+}
+
+.btn1-text{
+    background-color: cadetblue;
+    width: 165px;
+    height: 44px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+    font-size: 17px;
+    margin-top: 19px;
+}
+
+.img-wrapp{
+    float: left;
+    width: 50%;
+    height: 430px;
+    background-image: url('../images/bg-img.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: -10px;
+}
+
+.section2{
+    margin-top: 60px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+    font-family: 'josefin';
+}
+
+.section2 .container{
+    max-width: 1000px;
+}
+
+.section2 h2 {
+    color: rgb(92, 91, 91);
+    font-size: 32px;
+}
+
+.section2 p {
+    margin-top: 40px;
+    max-width: 600px;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.section2 img {
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    top: 100px;
+    box-shadow: rgb(92, 92, 92) 3px 3px 5px 3px;
+}
+
+.section3{
+    width: 100%;
+}
+
+.ladoEsquerdo{
+    float: left;
+    width: 50%;
+    padding: 160px 0px 90px 0px;
+    background-color: rgb(1, 37, 54);
+    color: white;
+}
+
+.wrapper-1{
+    max-width: 600px;
+    float: right;
+    padding: 0 30px
+}
+
+.ladoEsquerdo h2{
+    margin-top: 15px;
+    font-weight: 300;
+    font-family: 'josefin';
+    font-style: italic;
+    font-size: 30px;
+}
+
+.ladoEsquerdo p {
+    font-size: 20px;
+    font-family: 'josefin';
+    margin-top: 18px;
+    line-height: 35px;
+}
+
+.ladoDireito{
+    float: left;
+    width: 50%;
+    padding: 170px 0 90px 0px;;
+    color: rgb(5, 5, 5);
+}
+
+.sobre-autor{
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.titulo-autor{
+    float: left;
+    width: 100%;
+
+}
+
+.titulo-autor h2{
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'josefin';
+}
+
+.texto-autor p {
+    padding-right: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'josefin';
+}
+
+.wrapper-titulo-autor{
+    float: left;
+}
+
+.wrapper-titulo-autor p {
+    font-family: 'josefin';
+    font-style: italic;
+}
+
+.titulo-autor .img-autor{
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 40px;
+    position: relative;
+    top: -20px;
+    right: -20px;
+    background-image: url('../images/foto.jpg');
+    background-size: 100% 100%;
+    
+}
+
+.texto-autor{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.slider-bullets{
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+    float: left;
+    background-color: rgb(136, 134, 134);
+    cursor: pointer;
+}
+
+section.section4{
+    background-color: rgb(37, 37, 37);
+    padding: 100px 0;
+}
+
+.form{
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 10px;
+    font-family: 'josefin';
+}
+
+
+.form h2{
+    font-size: 26px;
+    font-weight: normal;
+    font-family: 'josefin';
+    
+}
+
+.form p{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'josefin';
+    max-width: 400px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.form form input[type=text]{
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    margin-top: 8px;
+    border: rgb(53, 52, 52) 1px solid;
+}
+
+.form form input[type=email]{
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    margin-top: 8px;
+    border: rgb(53, 52, 52) 1px solid;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form textarea{
+    width: 90%;
+    max-width: 480px;
+    height: 250px;
+    margin-top: 8px;
+    border: rgb(53, 52, 52) 1px solid;
+    padding: 15px;
+}
+
+.form form input[type=submit]{
+        background-color: cadetblue;
+        width: 165px;
+        height: 44px;
+        cursor: pointer;
+        color: white;
+        border-radius: 30px;
+        font-size: 17px;
+        margin-top: 15px;
+        border: 0;
+}
+
+.map-wrapper{
+    float: left;
+    width: 50%;
+    color: white;
+    padding: 0 40px;
+}
+
+.map-wrapper h2{
+    font-size: 26px;
+    font-weight: normal;
+    font-family: 'josefin';
+}
+
+.map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px rgb(153, 149, 149) solid;
+    left: 0;
+    top: 0;
+}
+
+.map-wrapper3{
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.map-wrapper2{
+    width: 100%;
+    padding-top: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: rgb(59, 59, 59);
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-family: 'josefin';
+    font-size: 18px;
+    color: white;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-family: 'josefin';
+    font-size: 18px;
+    color: white;
+}
+
+
+@media screen and (max-width:830px){
+    .chamada1{
+        max-width: none;
+        margin: 170px;
+        float: none;
+        width: 40%;
+        position: relative;
+        top: 250px;
+        right: 70px;
+    }
+
+    .chamada1 h2 {
+        font-size: 33px;
+        text-align: left; 
+        padding: 0 10px;   
+    }
+
+    .chamada1 p {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 70px 2%;
+    }
+
+    header .logo img{
+        display: none;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    header nav.mobile{
+        display: block;    
+    }
+
+    .chamada1{
+        max-width: none;
+        margin-top: 70px;
+        float: none;
+        width: 40%;
+        position: relative;
+        top: 210px;
+    }
+
+    .chamada1 h2 {
+        font-size: 33px;
+        text-align: left; 
+        padding: 0 10px;   
+    }
+
+    .chamada1 p {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    section.section1{
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .section1-text{
+        width: 100%;
+        float: none;
+        margin-top: 0px;
+        position: static;
+        display: inline-block;
+        padding-left: 0;
+    }
+
+    .section1-text ul{
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .section1-text ul li{
+        float: none;
+        text-align: left;
+    }
+
+    .btn1-text{
+        display: inline-block;
+    }
+    .img-wrapp{
+        display: none;
+    }
+
+    .section2{
+        padding: 40px 2%;
+    }
+
+    .map-wrapper{
+        width: 100%;
+        float: none;
+        margin-top: 40px;
+        padding: 0 4%;
+    }
+
+    .map-wrapper h2{
+        text-align: center;
+    }
+
+    .form{
+        width: 100%;
+        float: none;
+    }
+
+    .form p{
+       display: inline-block;
+       float: none;
+    }
+
+    section.section4 .container{
+        text-align: center;
+        float: none;
+    }
+
+    .map-wrapper3{
+        width: 80%;
+        max-width: none;
+        padding-top: 80%;
+        position: relative;
+        margin-top: 30px;
+        display: inline-block;
+        margin-left: 50px;
+    }
+    
+    .map-wrapper2{
+        width: 100%;
+        padding-top: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .map-wrapper2 .map iframe{
+        width: 345px;
+        height: 345px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .ladoEsquerdo{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .ladoDireito{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .section2 img {
+        margin-top: 20px;
+        top: 16px;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top: 8px;
+    }
+    
+
+}
+
+
+
+
